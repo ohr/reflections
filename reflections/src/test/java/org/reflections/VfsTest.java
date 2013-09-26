@@ -218,7 +218,7 @@ public class VfsTest {
         //todo?
     }
 
-    @Test
+    @Test @Ignore
     public void jarInputStream() {
         JavassistAdapter javassistAdapter = new JavassistAdapter();
 

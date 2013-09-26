@@ -2,14 +2,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.reflections</groupId>
+    <groupId>org.reflections.asl2</groupId>
     <artifactId>reflections-parent</artifactId>
-    <version>0.9.9-RC1</version>
+    <version>0.9.9-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Reflections</name>
     <description>Reflections - a Java runtime metadata analysis</description>
     <url>http://code.google.com/p/reflections/</url>
+
+    <properties>
+        <internal.repo.path>../maven-repo</internal.repo.path>
+    </properties>
 
     <modules>
         <module>reflections</module>
@@ -18,27 +22,22 @@
 
     <licenses>
         <license>
-            <name>WTFPL</name>
-            <url>http://www.wtfpl.net/</url>
+            <name>Apache Software License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
 
     <scm>
-        <connection>http://reflections.googlecode.com/svn/trunk/</connection>
-        <url>http://reflections.googlecode.com/svn/trunk/</url>
+        <connection>scm:git:git@github.com:ohr/reflections.git</connection>
+        <url>scm:git:git@github.com:ohr/reflections.git</url>
+        <developerConnection>scm:git:git@github.com:ohr/reflections.git</developerConnection>
     </scm>
-
-    <developers>
-        <developer>
-            <email>ronmamo@gmail.com</email>
-        </developer>
-    </developers>
 
     <distributionManagement>
         <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>googlecode</id>
-            <url>svn:https://reflections.googlecode.com/svn/repo</url>
+            <id>internal.repo</id>
+            <name>Internal Repository</name>
+            <url>${internal.repo.path}</url>
         </repository>
     </distributionManagement>
 
@@ -90,6 +89,13 @@
                         <additionalClasspathElement>${project.build.outputDirectory}/target/test-classes</additionalClasspathElement>
                     </additionalClasspathElements>
                 </configuration>
+            </plugin>
+
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.4</version>
             </plugin>
 
         </plugins>

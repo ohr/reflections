@@ -5,16 +5,26 @@ Reflections scans your classpath, indexes the metadata, allows you to query it o
 
 Using Reflections you can query your metadata such as:
   * get all subtypes of some type
-  * get all types/constructos/methods/fields annotated with some annotation, optionally with annotation parameters matching
+  * get all types/constructors/methods/fields annotated with some annotation, optionally with annotation parameters matching
   * get all resources matching matching a regular expression
   * get all methods with specific signature including parameters, parameter annotations and return type
+
+Note
+-----
+
+This is a fork of https://github.com/ronmamo/reflections. My humble gratitude goes to
+the original author(s).
+
+The fork fulfills two purposes:
+*Source of potential fixes to derive pull requests from
+*Relicensing for users who feel offended by the wording of the official license. Ah, WTF.
 
 Intro
 -----
 Add Reflections to your project. for maven projects just add this dependency:
 
      <dependency>
-         <groupId>org.reflections</groupId>
+         <groupId>org.reflections.asl2</groupId>
          <artifactId>reflections</artifactId>
          <version>0.9.9-RC1</version>
      </dependency>
@@ -63,7 +73,7 @@ If no scanners are configured, the default one will be used - SubTypesScanner an
 Other scanners can be configured as well, such as ResourcrsScanner, MethodAnnotationsScanner, ConstructorAnnotationsScanner, FieldAnnotationsScanner, MethodParameterScanner or any custom scanner.
 A classloader also can be configured, which will be used for resolving runtime classes from names.
 
-*Browse the [javadoc](http://reflections.googlecode.com/svn/trunk/reflections/javadoc/apidocs/index.html?org/reflections/Reflections.html) for more info. Also, browse the [tests directory](http://code.google.com/p/reflections/source/browse/#svn/trunk/reflections/src/test/java/org/reflections) to see some more examples.*
+*Browse the [javadoc](http://reflections.googlecode.com/svn/trunk/reflections/javadoc/apidocs/index.html?org/reflections/Reflections.html) for more info. Also, browse the [tests directory](https://github.com/ohr/reflections/tree/master/reflections/src/test/java/org/reflections) to see some more examples.*
 
 ----
 
@@ -148,7 +158,3 @@ You can easily extend Reflections by creating your specialized Scanner class and
 
 Patches and extension are welcomed!
 
-The license is [WTFPL](http://www.wtfpl.net/), just do what the fuck you want to. this library is given as an act of giving and generosity, [Dāna](http://en.wikipedia.org/wiki/D%C4%81na)
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WLN75KYSR6HAY)
-
-_Cheers_
