@@ -37,7 +37,7 @@
         <repository>
             <id>internal.repo</id>
             <name>Internal Repository</name>
-            <url>${internal.repo.path}</url>
+            <url>file:${internal.repo.path}</url>
         </repository>
     </distributionManagement>
 
@@ -99,6 +99,13 @@
             </plugin>
 
         </plugins>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-file</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions> 		
     </build>
 
 </project>
