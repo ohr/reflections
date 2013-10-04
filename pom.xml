@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.reflections.asl2</groupId>
@@ -28,10 +27,11 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:ohr/reflections.git</connection>
-        <url>scm:git:git@github.com:ohr/reflections.git</url>
-        <developerConnection>scm:git:git@github.com:ohr/reflections.git</developerConnection>
-    </scm>
+        <connection>scm:git:file://.</connection>
+        <url>scm:git:file://.</url>
+        <developerConnection>scm:git:file://.</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
 
     <distributionManagement>
         <repository>
