@@ -27,22 +27,11 @@
         </license>
     </licenses>
 
-	<!-- remote -->
-	<!--
     <scm>
         <connection>scm:git:git@github.com:ohr/reflections.git</connection>
         <url>scm:git:git@github.com:ohr/reflections.git</url>
         <developerConnection>scm:git:git@github.com:ohr/reflections.git</developerConnection>
     </scm>
-	-->
-
-    <scm>
-        <connection>scm:git:file://.</connection>
-        <url>scm:git:file://.</url>
-        <developerConnection>scm:git:file://.</developerConnection>
-    </scm>
-	
-	
 
     <distributionManagement>
         <repository>
