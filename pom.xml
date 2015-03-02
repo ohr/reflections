@@ -11,12 +11,10 @@
 
     <properties>
         <internal.repo.path>../maven-repo</internal.repo.path>
+        <guava.version>15.0</guava.version>
+        <javassist.version>3.18.2-GA</javassist.version>
+        <jdk.version>1.7</jdk.version>        
     </properties>
-
-    <modules>
-        <module>reflections</module>
-        <module>reflections-maven</module>
-    </modules>
 
     <licenses>
         <license>
@@ -54,12 +52,6 @@
             <url>file:${internal.repo.path}</url>
         </repository>
     </distributionManagement>
-
-    <properties>
-        <guava.version>15.0</guava.version>
-        <javassist.version>3.18.2-GA</javassist.version>
-        <jdk.version>1.7</jdk.version>
-    </properties>
 
     <dependencies>
         <dependency>

@@ -1,8 +1,4 @@
-<<<<<<< HEAD:reflections/src/test/java/org/reflections/MyTestModelStore.java
-//generated using Reflections JavaCodeSerializer [Fri Sep 27 07:44:50 CEST 2013]
-=======
-//generated using Reflections JavaCodeSerializer [Tue Nov 11 12:45:43 CET 2014]
->>>>>>> 2624a64346ccceb228c9927928c71714f921e014:src/test/java/org/reflections/MyTestModelStore.java
+//generated using Reflections JavaCodeSerializer [Mon Mar 02 14:18:45 CET 2015]
 package org.reflections;
 
 public interface MyTestModelStore {
@@ -64,8 +60,8 @@ public interface MyTestModelStore {
 			}
 			public interface TestModel$C1 {
 				public interface annotations {
-					public interface org_reflections_TestModel$AC1 {}
 					public interface org_reflections_TestModel$AC1n {}
+					public interface org_reflections_TestModel$AC1 {}
 				}
 			}
 			public interface TestModel$C2 {
@@ -80,13 +76,8 @@ public interface MyTestModelStore {
 			}
 			public interface TestModel$C4 {
 				public interface fields {
-<<<<<<< HEAD:reflections/src/test/java/org/reflections/MyTestModelStore.java
-					public interface f1 {}
-					public interface f3 {}
-=======
 					public interface f3 {}
 					public interface f1 {}
->>>>>>> 2624a64346ccceb228c9927928c71714f921e014:src/test/java/org/reflections/MyTestModelStore.java
 					public interface f2 {}
 				}
 				public interface methods {
@@ -127,8 +118,6 @@ public interface MyTestModelStore {
 				public interface annotations {
 					public interface java_lang_annotation_Inherited {}
 					public interface java_lang_annotation_Retention {}
-<<<<<<< HEAD:reflections/src/test/java/org/reflections/MyTestModelStore.java
-=======
 				}
 			}
 			public interface TestModel$Usage {
@@ -148,7 +137,6 @@ public interface MyTestModelStore {
 				}
 				public interface methods {
 					public interface method {}
->>>>>>> 2624a64346ccceb228c9927928c71714f921e014:src/test/java/org/reflections/MyTestModelStore.java
 				}
 			}
 		}
