@@ -3,7 +3,7 @@
 
     <groupId>org.reflections.asl2</groupId>
     <artifactId>reflections</artifactId>
-    <version>0.10-SNAPSHOT</version>
+    <version>0.10-rc1</version>
 
     <name>Reflections</name>
     <description>Reflections - a Java runtime metadata analysis</description>
@@ -40,7 +40,7 @@
         <connection>scm:git:file://.</connection>
         <url>scm:git:file://.</url>
         <developerConnection>scm:git:file://.</developerConnection>
-      <tag>HEAD</tag>
+      <tag>reflections-0.10-rc1</tag>
   </scm>
 	
 	
